@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-light-pink_colour: #ee82ee;
+  --primary_pink_colour: #d22287;
+  --light-pink_colour: #f4bbff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  grid-template:
+    "navigation" auto
+    "hero" auto
+    "about-us" auto
+    "services" 1fr /
+    auto;
+}
+
+.navigation {
+  grid-area: navigation;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 20px;
+}
+
+.navigation .logo {
+  height: 60px;
+  width: 150px;
+}
+
+.navigation .right-nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 30px;
+  justify-self: end;
+  align-self: end;
+}
+
+.navigation .right-nav li {
+  padding: 10px;
+}
+
+.navigation .right-nav li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation .right-nav li a:hover {
+  background-color: #f1d5f7;
+  box-shadow: var(--light-pink_colour) 0px 48px 100px 0px;
+  text-decoration: underline var(--primary_pink_colour);
+  border-radius: 18px;
+}
+/* HERO section */
+.hero {
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 20px;
+  grid-gap: 20px;
+  /* background-color: #f8f4f8; */
+}
+
+.left-hero img {
+  height: 100%;
+  width: 100%;
+  box-shadow: var(--light-pink_colour) 0px 5px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 2px 1px -5px;
+  object-fit: cover;
+}
+
+.right-hero {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto 0.7fr;
+}
+
+.right-hero span {
+  color: var(--primary_pink_colour);
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.right-hero h1 {
+  font-size: 3.5rem;
+  font-family: serif;
+  padding-bottom: 15px;
+}
+
+.right-hero h2 {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.hero-links {
+  align-self: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 30px;
+}
+
+.hero-links a {
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 15px 20px;
+  justify-self: baseline;
+}
+
+.hero-book-appointment {
+  background-color: var(--bright-light-pink_colour);
+  color: white;
+  transition: 0.5s;
+}
+
+.hero-book-appointment:hover {
+  transform: scale(1.1);
+}
+
+.hero-know-services {
+  border: 1px solid var(--bright-light-pink_colour);
+  transition: 0.5s;
+}
+
+.hero-know-services:hover {
+  transform: scale(1.1);
+}
