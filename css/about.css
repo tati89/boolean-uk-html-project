@@ -58,6 +58,7 @@
 .left-bottom-right p {
   width: 100%;
   font-weight: 330;
+  font-size: 0.9rem;
   line-height: 1.2rem;
 }
 
@@ -79,11 +80,11 @@
   text-decoration: none;
   border-radius: 25px;
   padding: 15px 30px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
-.left-bottom-button .learn-more:hover {
-  transform: scale(1.1);
+.learn-more:hover {
+  background-color: var(--light-pink_colour);
 }
 
 blockquote {

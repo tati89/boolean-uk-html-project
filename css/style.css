@@ -24,7 +24,7 @@ html {
     "navigation" auto
     "hero" auto
     "about-us" auto
-    "services" 1fr /
+    "services" auto /
     auto;
 }
 
