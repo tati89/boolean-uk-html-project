@@ -1,0 +1,127 @@
+/* READ-MORE page */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-light-pink_colour: #ee82ee;
+  --primary_pink_colour: #d22287;
+  --light-pink_colour: #f4bbff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "navigation navigation" auto
+    "left-main right-main" 1fr /
+    0.3fr 1fr;
+}
+
+.navigation {
+  grid-area: navigation;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 20px;
+}
+
+.navigation .logo {
+  height: 60px;
+  width: 150px;
+}
+
+.navigation .right-nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 30px;
+  justify-self: end;
+  align-self: end;
+}
+
+.navigation .right-nav li {
+  padding: 10px;
+}
+
+.navigation .right-nav li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation .right-nav li a:hover {
+  background-color: #f1d5f7;
+  box-shadow: var(--light-pink_colour) 0px 48px 100px 0px;
+  text-decoration: underline var(--primary_pink_colour);
+  border-radius: 18px;
+}
+
+/* MAIN */
+
+.left-main {
+  grid-area: left-main;
+  padding: 5% 10%;
+  position: inherit;
+}
+
+.left-main-services-top {
+  background-color: #d22287;
+  display: grid;
+  align-content: center;
+}
+
+.left-main span {
+  justify-self: center;
+  color: white;
+}
+
+.left-main ul {
+  display: grid;
+  background-color: #f4f6f8;
+  display: grid;
+  grid-gap: 25px;
+  padding: 25px 10px;
+}
+
+.left-main ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.left-main ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  font-family: Gill Sans, sans-serif;
+}
+
+.right-main {
+  grid-area: right-main;
+  display: grid;
+  overflow: scroll;
+}
+
+.right-main h1 {
+  font-family: cursive;
+  font-size: 2rem;
+  justify-self: center;
+  text-decoration: underline var(--primary_pink_colour);
+}
+
+.service-discription {
+  display: grid;
+  grid-template-rows: 0.2fr auto;
+}
+
+.service-discription p {
+  line-height: 1.6rem;
+  font-family: Gill Sans, sans-serif;
+}
