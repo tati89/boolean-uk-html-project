@@ -1,0 +1,76 @@
+/* CONTACT_US section */
+.contact-us {
+  grid-area: contact-us;
+  display: grid;
+  padding-bottom: 20px;
+}
+
+.top-contact-us {
+  color: var(--primary_pink_colour);
+  font-weight: 500;
+  margin: 30px 0px;
+  font-size: 1.4rem;
+  justify-self: center;
+}
+
+.contact-us h5 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  justify-self: center;
+  width: 60%;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-gap: 10px;
+  margin: 20px 0px;
+}
+
+.top-form {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+}
+
+input {
+  padding: 10px 0px;
+  border: 1.5px solid #eceff5;
+  color: #e1dfe5;
+  font-size: 15px;
+}
+
+input:focus {
+  color: black;
+}
+/* .input:valid {
+  border-bottom: 1px solid lightgreen;
+} */
+
+#choose-service {
+  padding: 10px 0px;
+  border: 1.5px solid #eceff5;
+  color: #838183;
+}
+textarea {
+  border: 1.5px solid #eceff5;
+}
+
+.submit-button {
+  justify-self: center;
+}
+.button {
+  padding: 15px 40px;
+  border-radius: 25px;
+  border: 1px solid var(--bright-light-pink_colour);
+  color: #673398;
+  transition: 0.5s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

@@ -24,8 +24,10 @@ html {
     "navigation" auto
     "hero" auto
     "about-us" auto
-    "services" auto /
-    auto;
+    "services" auto
+    "contact-us" auto
+    "footer" 1fr /
+    1fr;
 }
 
 .navigation {
@@ -132,6 +134,7 @@ html {
 }
 
 .hero-know-services {
+  color: #673398;
   border: 1px solid var(--bright-light-pink_colour);
   transition: 0.5s;
 }
