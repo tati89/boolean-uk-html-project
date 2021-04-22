@@ -27,7 +27,7 @@ form {
   grid-auto-flow: row;
   justify-content: center;
   grid-gap: 10px;
-  margin: 20px 0px;
+  margin: 20px 30px;
 }
 
 .top-form {

@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -11,13 +12,12 @@
   --light-pink_colour: #f4bbff;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .container {
   height: 100vh;
   width: 100vw;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 
   display: grid;
   grid-template:
@@ -26,7 +26,7 @@ html {
     "about-us" auto
     "services" auto
     "contact-us" auto
-    "footer" 1fr /
+    "footer" auto /
     1fr;
 }
 

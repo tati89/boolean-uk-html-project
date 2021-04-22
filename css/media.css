@@ -1,0 +1,16 @@
+@media screen and (max-width: 499px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template:
+      "navigation" auto
+      "hero" auto
+      "about-us" auto
+      "services" auto
+      "contact-us" auto
+      "footer" auto /
+      1fr;
+  }
+}
