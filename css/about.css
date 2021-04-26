@@ -1,6 +1,5 @@
 /* ABOUT_US section */
 .about-us {
-  grid-area: about-us;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px;
@@ -101,4 +100,44 @@ figcaption {
   font-weight: 550;
   text-align: end;
   margin-right: 75px;
+}
+
+@media screen and (max-width: 760px) {
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    grid-gap: 10px;
+    background-color: #f8f1f5;
+  }
+
+  .about-us-right img {
+    display: none;
+  }
+
+  .about-us-left h2 {
+    font-size: 2rem;
+  }
+
+  .about-us-left h3 {
+    font-size: 0.9rem;
+  }
+  blockquote,
+  figcaption {
+    display: none;
+  }
+
+  .about-us-left .left-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .left-bottom img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: var(--light-pink_colour) 0px 5px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 2px 1px -5px;
+  }
 }

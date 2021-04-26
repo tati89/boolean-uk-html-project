@@ -1,6 +1,5 @@
 /* SERVICES section */
 .services {
-  grid-area: services;
   display: grid;
 }
 
